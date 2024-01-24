@@ -79,6 +79,9 @@ li {
   column-gap: 30px;
   row-gap: 30px;
 }
+.item-card {
+  overflow: hidden;
+}
 .item-card img {
   width: 100%;
   display: block;
@@ -192,18 +195,33 @@ img {
 .overlay4 {
   position: absolute;
   background-image: url(../img/19.png);
+  background-size: cover;
   width: 100%;
-  height: calc(100% - 35px);
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 1.4s;
+}
+.overlay-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
   top: 0;
   left: 0;
   opacity: 0;
   display: flex;
+  transition: 0.2s;
+  background-color: rgba(53, 52, 52, 0.356);
+}
+.item-discovery:hover .overlay-text {
+  opacity: 1;
 }
 .item-discovery:hover .overlay4 {
   width: 100%;
-  height: calc(100% - 35px);
+  height: 100%;
   opacity: 1;
-  /* transform: scale(1.1); */
+  transform: scale(1.4);
 }
 .item-discovery h6 {
   margin: auto auto 25px auto;
@@ -211,13 +229,13 @@ img {
   border-width: 3px;
   padding: 10px 30px;
   text-align: center;
-  background-color: rgba(240, 248, 255, 0.658);
+  background-color: rgba(240, 248, 255);
 }
 .overlay5 {
   position: absolute;
   background-image: url(../img/20.png);
   width: 100%;
-  height: calc(100% - 35px);
+  height: 100%;
   top: 0;
   left: 0;
   opacity: 0;
@@ -225,7 +243,7 @@ img {
 }
 .item-discovery:hover .overlay5 {
   width: 100%;
-  height: calc(100% - 35px);
+  height: 100%;
   opacity: 1;
   /* transform: scale(1.1); */
 }
@@ -233,7 +251,7 @@ img {
   position: absolute;
   background-image: url(../img/21.png);
   width: 100%;
-  height: calc(100% - 35px);
+  height: 100%;
   top: 0;
   left: 0;
   opacity: 0;
@@ -241,7 +259,7 @@ img {
 }
 .item-discovery:hover .overlay6 {
   width: 100%;
-  height: calc(100% - 35px);
+  height: 100%;
   opacity: 1;
   /* transform: scale(1.1); */
 }
@@ -249,7 +267,7 @@ img {
   position: absolute;
   background-image: url(../img/22.png);
   width: 100%;
-  height: calc(100% - 35px);
+  height: 100%;
   top: 0;
   left: 0;
   opacity: 0;
@@ -257,7 +275,7 @@ img {
 }
 .item-discovery:hover .overlay7 {
   width: 100%;
-  height: calc(100% - 35px);
+  height: 100%;
   opacity: 1;
   /* transform: scale(1.1); */
 }
@@ -265,7 +283,7 @@ img {
   position: absolute;
   background-image: url(../img/23.png);
   width: 100%;
-  height: calc(100% - 35px);
+  height: 100%;
   top: 0;
   left: 0;
   opacity: 0;
