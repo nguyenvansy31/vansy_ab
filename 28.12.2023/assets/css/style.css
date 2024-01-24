@@ -7,8 +7,7 @@ li {
   padding: 0;
   box-sizing: border-box;
 }
-.wrap {
-}
+
 .menu {
   display: flex;
   justify-content: space-between;
